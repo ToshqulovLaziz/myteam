@@ -1,0 +1,128 @@
+ /********** FOOTER STYLES START **********/
+ .site-footer {
+     width: 100%;
+     background-color: var(--footer-bg-color);
+ }
+
+ .site-footer__wrapper {
+     padding-top: 48px;
+     padding-bottom: 48px;
+ }
+
+ .site-footer__list {
+     list-style: none;
+     padding-left: 0;
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .site-footer__mobile--list {
+     display: none;
+ }
+
+ .site-footer__links {
+     margin-top: 25px;
+ }
+
+ @media only screen and (max-width:900px) {
+     .site-footer__list {
+         display: none;
+     }
+
+     .site-footer__mobile--list {
+         display: flex;
+     }
+
+     .site-footer__links {
+         margin-top: 53px;
+     }
+ }
+
+ @media only screen and (max-width:710px) {
+     .item-logo{
+         display: none;
+     }
+
+     .site-footer__list {
+         display: flex;
+         flex-direction: column;
+     }
+
+     .site-footer__wrapper {
+         text-align: center;
+     }
+
+     .site-footer__links {
+         margin-bottom: 24px;
+     }
+ }
+
+ .site-footer__link {
+     text-decoration: none;
+     font-weight: 600;
+     font-size: 18px;
+     line-height: 28px;
+     color: #FFFFFF;
+ }
+
+ .link-about {
+     margin-left: 40px;
+ }
+
+ .site-footer__adress {
+     margin: 0;
+     font-weight: 600;
+     font-size: 15px;
+     line-height: 25px;
+     color: #FFFFFF;
+     mix-blend-mode: normal;
+     opacity: 0.6;
+ }
+
+ .site-footer__logo--links {
+     display: flex;
+     margin-left: 150px;
+     gap: 16px;
+ }
+
+
+ .text-copyright {
+     margin-top: 51px;
+ }
+
+ @media only screen and (max-width:900px) {
+     .iteam-addres {
+         text-align: right;
+     }
+
+     .site-footer__logo--links {
+         margin-top: 33px;
+         margin-left: 0;
+     }
+
+     .text-copyright {
+         margin-top: 34px;
+
+     }
+ }
+
+ @media only screen and (max-width:710px) {
+     .iteam-addres {
+         display: none;
+     }
+
+     .site-footer__logo--links {
+         display: flex;
+         justify-content: center;
+         margin: 0;
+         margin-top: 40px;
+         text-align: center;
+         gap: 16px;
+     }
+
+     .text-copyright {
+         margin-top: 16px;
+     }
+ }
+
+ /********** FOOTER STYLES END **********/
