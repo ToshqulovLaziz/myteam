@@ -1,10 +1,92 @@
-/*********** MAIN STYLES START **********/ 
+/*********** MAIN STYLES START **********/
 .main {
     flex-grow: 1;
 }
 
-/*********** READY SECTION STYLES START  **********/ 
-.ready-section{
-    background-color: #F67E7E;
+/*********** READY SECTION STYLES START  **********/
+.ready-section {
+    width: 100%;
+    background-color: var(--ready-bg--color);
+    background-image: url('/images/Ready-bg-img.png');
+    background-repeat: no-repeat;
+    background-position: bottom left;
 }
-/*********** READY SECTION STYLES END **********/ 
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+    .ready-section {
+        background-image: url('/images/Ready-bg-img@2x.png');
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .ready-section {
+        background-image: url('/images/Ready-bg-mobile-img.png');
+        background-size: 220px;
+    }
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+        .ready-section {
+            background-image: url('/images/Ready-bg-mobile-img@2x.png');
+        }
+    }
+}
+
+.ready-section__wrapper {
+    padding-top: 76px;
+    padding-bottom: 86px;
+    padding-left: 90px;
+    padding-right: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media only screen and (max-width:710px) {
+    .ready-section__wrapper {
+        padding-top: 83px;
+        padding-bottom: 83px;
+        padding-left: 24px;
+        padding-right: 24px;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+}
+
+.ready-section__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 38px;
+    color: var(--build-bg--color);
+}
+
+@media only screen and (max-width:900px) {
+    .ready-section__title {
+        width: 100%;
+        font-size: 32px;
+        line-height: 32px
+    }
+}
+
+.ready-section__btn {
+    padding: 9px 33px 11px 32px;
+    border: 2px solid #012F34;
+    border-radius: 24px;
+    background-color: transparent;
+}
+
+/*********** READY SECTION STYLES END **********/
+
+
+/*********** MAIN STYLES END **********/
