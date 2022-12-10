@@ -1,0 +1,219 @@
+/********** CONTACT US STYLES START ********/
+.contact-section {
+    background-color: var(--hero-bg-color);
+    background-image: url('/images/about-img.png'), url('/images/about-img1.png');
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+}
+
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+    .contact-section {
+        background-image: url('/images/about-img@2x.png'), url('/images/about-img1@2x.png');
+    }
+}
+
+.contact-section__wrapper {
+    padding: 47px 0 120px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.contact-section__title {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 100px;
+    color: var(--main-text-color);
+}
+
+.contact-section__subtitle {
+    margin-top: 0;
+    margin-bottom: 32px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    color: var(--ready-bg--color);
+}
+
+
+
+.contact-section__item {
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-section__text {
+    width: 100%;
+    margin: 0;
+    margin-left: 23px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--main-text-color);
+}
+
+.contact-section__item::before {
+    width: 72px;
+    height: 72px;
+}
+
+.contact-section__item:nth-child(1)::before {
+    content: url(/images/icons/info_smallperson.png);
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+    .contact-section__item::before {
+        content: url('../../images/icons/info_smallperson@2x.png');
+    }
+}
+
+.contact-section__item:nth-child(2)::before {
+    content: url(/images/icons/info_setting_icon.png);
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+    .contact-section__item::before {
+        content: url(/images/icons/info_setting_icon.png);
+    }
+}
+
+.contact-section__item:nth-child(3)::before {
+    content: url(/images/icons/info_icon_stat.png);
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+    .contact-section__item::before {
+        content: url('../../images/icons/info_icon_stat@2x.png');
+    }
+}
+
+.contact-section__item::before:nth-child(2) {
+    content: url(/images/icons/);
+}
+
+.contact-section__end--item {
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.contact-section__form--text {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -0.115385px;
+    color: var(--main-text-color);
+    mix-blend-mode: normal;
+    opacity: 0.6;
+}
+
+.contact-section__form--name {
+    width: 524px;
+    border: none;
+    border-bottom: 1px solid var(--main-text-color);
+    background-color: transparent;
+    transition: all 0.3s;
+}
+
+.contact-section__form--name:hover {
+    border-bottom: 1px solid var(--ready-bg--color);
+}
+
+.contect-section__btn {
+    margin-top: 24px;
+    padding: 9px 32px 11px 32px;
+    background-color: var(--main-text-color);
+    border: 2px solid var(--main-text-color);
+    border-radius: 24px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #004047;
+}
+
+@media only screen and (max-width:900px) {
+    .contact-section__wrapper {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .contact-section__title {
+        font-size: 64px;
+        line-height: 56px;
+    }
+
+    .contact-section__subtitle {
+        font-size: 32px;
+        line-height: 48px;
+    }
+
+    .contact-section__start {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:710px) {
+    .contact-section {
+        background-image: url('/images/About-mobile-img.png');
+        background-repeat: no-repeat;
+        background-position: bottom right;
+    }
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+        .contact-section {
+            background-image: url('/images/About-mobile-img@2x.png');
+        }
+    }
+
+    .contact-section__title {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .contact-section__subtitle {
+        font-size: 32px;
+        line-height: 48px;
+    }
+    .contact-section__end--item {
+        width: 100%;
+    }
+    .contact-section__form--name{
+        width: 325px;
+    }
+}
+
+
+
+/********** CONTACT US STYLES END ********/
