@@ -1,3 +1,4 @@
+ /********** HEADER STYLES START **********/
 .site-header {
   padding: 73px 0;
   background-color: var(--hero-bg-color);
@@ -45,6 +46,8 @@
   background-size: contain;
   content: "";
 }
+/********** HEADER STYLES END **********/
+
 /***** HEADER-MOBILE START *****/
 @media (max-width:665px) {
   .burger {
