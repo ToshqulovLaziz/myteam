@@ -1232,4 +1232,119 @@ a {
     margin-top: 16px;
   }
 }
-/********** FOOTER STYLES END **********//*# sourceMappingURL=main.css.map */
+/********** FOOTER STYLES END **********/
+.about-hero {
+  background-color: #014E56;
+  padding-bottom: 120px;
+  position: relative;
+}
+
+.about-hero__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-hero__title {
+  margin: 0px;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 100px;
+  color: #FFFFFF;
+}
+
+.about-hero__end::after {
+  width: 100px;
+  height: 244px;
+  content: url("../../images/hero_disk-red.png");
+  position: absolute;
+  right: calc(50% - 768px);
+  bottom: -45px;
+}
+
+.about-hero__end--hr {
+  margin: 0px;
+  width: 50px;
+  height: 4px;
+  background-color: #F67E7E;
+  border: none;
+  margin-bottom: 54px;
+}
+
+.about-hero__end--text {
+  margin: 0px;
+  width: 730px;
+  font-size: 18px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+
+@media (max-width: 768px) {
+  .about-hero {
+    background-color: #014E56;
+    padding-bottom: 120px;
+    position: relative;
+  }
+  .about-hero__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+  .about-hero__title {
+    margin: 0px;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 100px;
+    color: #FFFFFF;
+  }
+  .about-hero__end::after {
+    width: 100px;
+    height: 244px;
+    content: url("../../images/hero_disk-red.png");
+    position: absolute;
+    right: calc(50% - 385px);
+    bottom: -45px;
+  }
+  .about-hero__end--hr {
+    display: none;
+  }
+  .about-hero__end--text {
+    margin: 0px;
+    text-align: center;
+    width: 457px;
+    font-size: 15px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+}
+@media (max-width: 375px) {
+  .about-hero__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .about-hero__end::after {
+    width: 100px;
+    height: 244px;
+    content: url("../../images/hero-mobile.png");
+    position: absolute;
+    right: calc(50% - 186px);
+    bottom: -145px;
+  }
+  .about-hero__end--hr {
+    display: none;
+  }
+  .about-hero__end--text {
+    margin: 0px;
+    width: 327px;
+    font-size: 15px;
+    line-height: 28px;
+    /* or 187% */
+    text-align: center;
+    color: #FFFFFF;
+  }
+}/*# sourceMappingURL=main.css.map */
