@@ -1,0 +1,155 @@
+.site-sponsor {
+    background-color: #012F34;
+    padding-top: 140px;
+    padding-bottom: 140px;
+    position: relative;
+}
+
+.site-sponsor__title {
+    width: 920px;
+    margin: 0 auto;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.site-sponsor__title::before {
+    width: 200px;
+    height: 200px;
+    content: url('../../images/sponsor_clients-bg\ \(1\).png');
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 758px);
+}
+
+.site-sponsor__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.site-sponsor__item{
+  list-style-type: none;
+}
+.site-sponsor__link{
+    text-decoration: none;
+}
+
+
+@media (max-width:768px){
+    .site-sponsor {
+        background-color: #012F34;
+        padding-top: 140px;
+        padding-bottom: 140px;
+        position: relative;
+    }
+    
+    .site-sponsor__title {
+        width: 457px;
+        margin: 0 auto;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 32px;
+        /* identical to box height, or 100% */
+        
+        text-align: center;
+        
+        color: #FFFFFF;
+        
+    }
+    
+    .site-sponsor__title::before {
+        width: 200px;
+        height: 200px;
+        content: url('../../images/SPONSOR_BG_HALF.png');
+        position: absolute;
+        top: 0px;
+        left: calc(50% - 380px);
+    }
+    
+    .site-sponsor__list{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 70px;
+        width: 698px;
+    }
+    
+    .site-sponsor__item{
+      list-style-type: none;
+    }
+    .site-sponsor__link{
+        text-decoration: none;
+    }
+    .site-sponsor_img{
+          width:103px ;
+          height: 17px;
+    }
+    .site-sponsor_img1{
+         width: 103px;
+         height:17px ;
+    }
+    .site-sponsor_img2{
+        width: 103px;
+        height:17px ;
+    }
+    .site-sponsor_img3{
+        width: 103px;
+        height:17px ;
+    }
+    .site-sponsor_img4{
+        width: 103px;
+        height:17px ;
+    }
+}
+@media (max-width:375px){
+    .site-sponsor {
+        background-color: #012F34;
+        padding-top: 140px;
+        padding-bottom: 140px;
+        position: relative;
+    }
+    
+    .site-sponsor__title {
+        width: 327px;
+        margin: 0 auto;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 32px;
+        /* identical to box height, or 100% */
+        
+        text-align: center;
+        
+        color: #FFFFFF;
+        
+    }
+    
+    .site-sponsor__title::before {
+        width: 200px;
+        height: 200px;
+        content: url('../../images/mobile-sponsor.png');
+        position: absolute;
+        top: 0px;
+        left: calc(50% - 235px);
+    }
+    
+    .site-sponsor__list{
+        width: 375px;
+        display: flex;
+        flex-direction: column;
+       
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        gap: 56px;
+       
+        margin-top: 70px;
+    }
+    
+    
+    
+}
+
